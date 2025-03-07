@@ -26,7 +26,7 @@ WHERE salary > 15000;
 SELECT * FROM employees
 WHERE department_id = 30 OR department_id = 50 OR department_id = 100;
 
-# show all the employee details whos jobs id "IT_PROG"
+# show all the employee details whose jobs id "IT_PROG"
 SELECT * FROM employees
 WHERE job_id = 'IT_PROG';
 
@@ -47,16 +47,16 @@ ORDER BY hire_date ASC;
 SELECT * FROM employees
 ORDER BY hire_date ASC LIMIT 0, 3;
 
-# show top 3 lowest salary hoder
+# show top 3 lowest salary holder
 SELECT * FROM employees
 ORDER BY salary DESC LIMIT 0, 3;
 
-# show top 3 lowest salary hoder from department id 30
+# show top 3 lowest salary holder from department id 30
 SELECT * FROM employees
 WHERE department_id = 30
 ORDER BY salary ASC LIMIT 0, 3;
 
-# show the 5th highest salalry employee details
+# show the 5th highest salary employee details
 SELECT * FROM employees
 ORDER BY salary DESC LIMIT 4, 1;
 

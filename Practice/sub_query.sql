@@ -53,7 +53,7 @@ WHERE salary = ANY (
     GROUP BY department_id
 );
 
-# show all those employee details whoes salary is higher than all the maximun salary of department_number = 30 / 50 / 60
+# show all those employee details whose salary is higher than all the maximum salary of department_number = 30 / 50 / 60
 SELECT * FROM employees
 WHERE salary > ALL (
 	SELECT max(salary) FROM employees
@@ -63,7 +63,7 @@ WHERE salary > ALL (
 
 # --------------------- Row Subquery (subquery returns a single row but multiple column)  
 
-# show all thoes employee details who works in the same department and same job type as employee id = 110
+# show all those employee details who works in the same department and same job type as employee id = 110
 SELECT * FROM employees
 WHERE (department_id, job_id) = (
 	SELECT department_id, job_id FROM employees
@@ -87,7 +87,7 @@ SELECT MAX(avg_salary) AS 'max_avg_salary' FROM (
 	GROUP BY department_id
 ) AS dtable;
 
-# --------------------- Corelated Subquery (if inner query use outer query table)  
+# --------------------- Corelate Subquery (if inner query use outer query table)  
 # Show those employee details receiving highest salary in his job type. 
 SELECT e1.EMPLOYEE_ID, e1.JOB_ID, e1.SALARY 
 FROM employees AS e1 

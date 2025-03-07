@@ -13,11 +13,11 @@ CREATE TABLE IF NOT EXISTS table2 (
 	colP VARCHAR(30),
     colQ CHAR(10),
     colR DOUBLE NOT NULL,
-    foriegn_colA INT,
+    foreign_colA INT,
     
     CONSTRAINT pk_colP PRIMARY KEY(colP),
     CONSTRAINT un_colQ UNIQUE(colQ),
-    CONSTRAINT fk_foriegn_colA FOREIGN KEY(foriegn_colA) REFERENCES table1(colA) ON DELETE CASCADE
+    CONSTRAINT fk_foreign_colA FOREIGN KEY(foreign_colA) REFERENCES table1(colA) ON DELETE CASCADE
     
 );
 
