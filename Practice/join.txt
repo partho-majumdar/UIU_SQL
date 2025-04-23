@@ -3,7 +3,7 @@
 # t1.* -- first table all column
 # * -- all table all column, ON = common column name
 # Left Table -- JOIN -- Right Table
-# Left Join -- Add all ununsed data from left table and NULL -- equal Right Table data
+# Left Join -- Add all unused data from left table and NULL -- equal Right Table data
 
 # show country name and region name
 SELECT t1.region_name, t2.country_name 
